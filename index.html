@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <title>Kyle Langille</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav class="navbar">
+          <p class="name-heading">Kyle Langille</p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#section--1">About me</a></li>
+            <li><a class="nav-link" href="#section--2">Portfolio</a></li>
+            <li><a class="nav-link" href="#section--3">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="section-hero">
+        <div class="hero-img">
+          <p class="hero-text">Hi, I'm Kyle!</p>
+        </div>
+      </section>
+      <section class="section section-about" id="section--1">
+        <h2 class="section-title">About me</h2>
+        <div class="wrapper">
+          <p class="section-text">
+            I am a web developer who is enthusiastic about honing my skills and
+            learning new technologies.
+          </p>
+          <p class="section-text">
+            I have a passion for building things and solving problems. Let me
+            work for you!
+          </p>
+        </div>
+        <p class="section-text">I am currently proficient in:</p>
+        <div class="tech-current">
+          <ion-icon class="logo logo-html" name="logo-html5"></ion-icon>
+          <ion-icon class="logo logo-css" name="logo-css3"></ion-icon>
+          <ion-icon class="logo logo-js" name="logo-javascript"></ion-icon>
+        </div>
+        <p class="section-text">And I'm currently learning:</p>
+        <div class="tech-new">
+          <ion-icon class="logo logo-react" name="logo-react"></ion-icon>
+          <ion-icon class="logo logo-node" name="logo-nodejs"></ion-icon>
+        </div>
+      </section>
+      <section class="section section-portfolio" id="section--2">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="slider">
+          <div class="slide">
+            <div class="project">
+              <h5 class="project-header">Nietzsche Quote Generator</h5>
+              <img class="project-img" />
+              <p class="project-description">
+                A random quote generator for German philosopher Friedrich
+                Nietzsche. NOTE: Not all quotes are genuine.
+              </p>
+              <div class="project-btn-container">
+                <a class="btn preview-btn" href="#">Live Preview</a>
+                <a class="btn code-btn" href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <h5 class="project-header">Project 2</h5>
+              <img class="project-img" />
+              <p class="project-description">Project description</p>
+              <div class="project-btn-container">
+                <a class="btn preview-btn" href="#">Live Preview</a>
+                <a class="btn code-btn" href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <h5 class="project-header">Project 3</h5>
+              <img class="project-img" />
+              <p class="project-description">Project description</p>
+              <div class="project-btn-container">
+                <a class="btn preview-btn" href="#">Live Preview</a>
+                <a class="btn code-btn" href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn slider-btn--left">&larr;</button>
+          <button class="slider-btn slider-btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <section class="section section-contact" id="section--3">
+        <h2 class="section-title">Contact</h2>
+
+        <a class="contact-btn" href="mailto:kyle.a.langille@gmail.com"
+          >Email me!</a
+        >
+      </section>
+    </main>
+    <footer class="footer">
+      Built with ❤ by Kyle Langille. &nbsp;&copy; 2022 — All rights reserved.
+    </footer>
+    <script src="src/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
