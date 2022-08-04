@@ -1,5 +1,5 @@
 # personal-page-v1
-A mock-up of my first personal page
+A mock-up of my first personal page.
 
 V1 because I would like to re-do this in React.js once I get more comfortable with the framework. 
 
