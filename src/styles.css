@@ -7,9 +7,8 @@
 
 - FONT WEIGHTS:
 Default: 400
-Medium: 500
-Bold: 600
-Semi-bold: 700
+Bold: 700
+Very bold: 900
 
 - LINE HEIGHTS:
 Default: 1
@@ -18,16 +17,18 @@ Medium: 1.2
 Paragraph default: 1.6
 
 - LETTER SPACING:
--0.5
-0.75px
+
 
 --- 02 COLOURS
 - PRIMARY:
-
+#77dd77
 
 
 - TINTS:
-
+#c9f1c9
+#92e492
+#2d863d
+#3c6f3c
 
 - SHADES:
 
@@ -35,11 +36,14 @@ Paragraph default: 1.6
 - ACCENTS:
 
 - GREYS:
-
+#111
+#222
+#333
+#777
 
 
 --- 05 SHADOWS:
-
+0 1.6rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS:
 Default: 9px
@@ -72,7 +76,8 @@ body {
 .wrapper {
   width: 56rem;
   height: 24rem;
-  background-color: #a0e0ab;
+  background: linear-gradient(to bottom right, #92e492, #bbeebb);
+  box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 9px;
   margin-bottom: 1.8rem;
   padding: 1.8rem;
@@ -114,7 +119,7 @@ body {
 /************************************/
 
 .navbar {
-  background-color: rgba(201, 241, 201, 0.75);
+  background-color: rgba(201, 241, 201, 0.95);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,7 +134,7 @@ body {
 }
 
 .name-heading {
-  font-size: 3.2rem;
+  font-size: 4.4rem;
   margin-left: 2rem;
 }
 
@@ -184,13 +189,13 @@ body {
 
 .tech-current,
 .tech-new {
-  background: linear-gradient(#222222, #111111);
+  background: linear-gradient(#222, #111);
   display: flex;
   justify-content: center;
   border-radius: 9px;
   width: 25rem;
   margin-bottom: 1rem;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .logo {
@@ -229,7 +234,7 @@ body {
 
 .slider {
   width: 80rem;
-  height: 30rem;
+  height: 80rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -237,9 +242,9 @@ body {
 
 .slide {
   position: absolute;
-  top: 0;
+  top: -10rem;
   width: 100%;
-  height: 30rem;
+  height: 80rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,9 +277,72 @@ body {
   transform: translate(50%, -50%);
 }
 
+/* Project slide styles */
+.project {
+  width: 75%;
+  position: relative;
+  background: linear-gradient(to bottom right, #92e492, #bbeebb);
+  border-radius: 9px;
+  box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.project-header {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.project-description {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  margin-bottom: 3.5rem;
+  padding: 1rem;
+  color: #222;
+}
+
+.project-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  width: 80%;
+  border-radius: 9px;
+}
+
+/*Project Buttons */
+.project-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.preview-btn:link,
+.preview-btn:visited {
+  width: 14rem;
+  height: 4.4rem;
+  color: #000;
+  border: 1px solid #305830;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  background-color: #478547;
+}
+
+.preview-btn:hover,
+.preview-btn:active {
+  background-color: #5fb15f;
+}
+
+/* Dots */
 .dots {
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -282,7 +350,7 @@ body {
 
 .dots__dot {
   border: none;
-  background-color: #b9b9b9;
+  background-color: #777;
   opacity: 0.7;
   height: 1rem;
   width: 1rem;
@@ -297,55 +365,8 @@ body {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #888;
+  background-color: #333;
   opacity: 1;
-}
-
-/* Project slide styles */
-.project {
-  width: 65%;
-  position: relative;
-  background-color: #fff;
-  border-radius: 9px;
-}
-
-.project-header {
-  font-size: 2.25rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-}
-
-.project-description {
-  font-size: 1.7rem;
-  line-height: 1.8;
-  margin-bottom: 3.5rem;
-  padding: 1rem;
-  color: #666;
-}
-
-/*Project Buttons */
-.project-btn-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.btn:link,
-.btn:visited {
-  width: 10rem;
-  height: 4.5rem;
-  color: #000;
-  border: 1px solid #000;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.btn:hover,
-.btn:active {
 }
 
 /************************************/
@@ -359,7 +380,7 @@ body {
   width: 20rem;
   height: 6rem;
   font-size: 3rem;
-  background-color: #027324;
+  background-color: #478547;
   padding: 2rem 3rem;
   border-radius: 9px;
   color: #000;
@@ -377,7 +398,7 @@ body {
 /************************************/
 
 .footer {
-  background-color: #a0e0ab;
+  background-color: #92e492;
   height: 4.4rem;
   font-size: 1.8rem;
   display: flex;
