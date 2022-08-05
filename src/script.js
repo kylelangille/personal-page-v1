@@ -103,14 +103,14 @@ const slider = function () {
   btnRight.addEventListener("click", nextSlide);
   btnLeft.addEventListener("click", prevSlide);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowLeft") prevSlide();
-    e.key === "ArrowRight" && nextSlide();
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft") prevSlide();
+    event.key === "ArrowRight" && nextSlide();
   });
 
-  dotContainer.addEventListener("click", function (e) {
-    if (e.target.classList.contains("dots__dot")) {
-      const { slide } = e.target.dataset;
+  dotContainer.addEventListener("click", function (event) {
+    if (event.target.classList.contains("dots__dot")) {
+      const { slide } = event.target.dataset;
       goToSlide(slide);
       activateDot(slide);
     }
