@@ -399,10 +399,21 @@ body {
 
 .footer {
   background-color: #92e492;
-  height: 4.4rem;
+  height: 5.2rem;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0 1rem 0;
+}
+
+.github-icon {
+  height: 4rem;
+  width: 4rem;
+  transition: transform 0.3s ease-in-out;
+  color: #000;
+}
+
+.github-icon:hover {
+  transform: rotate(360deg) scale(1.2);
 }
